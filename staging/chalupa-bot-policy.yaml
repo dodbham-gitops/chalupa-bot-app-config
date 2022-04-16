@@ -31,7 +31,7 @@ metadata:
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: chalupa-bot
+    name: chalupa-bot-staging
     namespace: flux-system
   filterTags:
     pattern: '^rc-[a-f0-9]+-(?P<ts>[0-9]+)'
