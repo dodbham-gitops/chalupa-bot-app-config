@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - chalupa-bot-deployment.yaml
   - chalupa-bot-policy.yaml
+  - staging-namespace.yaml
