@@ -1,0 +1,18 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: chalupa-bot-staging-deployment
+  namespace: flux-system
+spec:
+  images:
+  - name: ghcr.io/olivercodes/chalupa-bot
+    newTag: rc-5e5227d4-1650051088 # {"$imagepolicy": "flux-system:chalupa-bot-staging-policy:tag"}
+    newName: ghcr.io/olivercodes/chalupa-bot # {"$imagepolicy": "flux-system:chalupa-bot-staging-policy:name"}
+  interval: 1m
+  path: "./manifests"
+  prune: true
+  targetNamespace: chalupa-bot-staging
+  sourceRef:
+    kind: GitRepository
+    name: chalupa-bot
+    namespace: flux-system
