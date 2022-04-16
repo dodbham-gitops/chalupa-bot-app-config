@@ -34,7 +34,7 @@ spec:
     name: chalupa-bot
     namespace: flux-system
   filterTags:
-    pattern: 'release-(?P<version>.*)'
+    pattern: 'release-(?P<version>.*)-'
     extract: '$version'
   policy:
     semver:
