@@ -34,7 +34,7 @@ metadata:
   name: chalupa-bot-staging
   namespace: flux-system
 spec:
-  image: ghcr.io/olivercodes/chalupa-bot
+  image: ghcr.io/dodbham-gitops/chalupa-bot
   interval: 30s
   accessFrom:
     namespaceSelectors:
