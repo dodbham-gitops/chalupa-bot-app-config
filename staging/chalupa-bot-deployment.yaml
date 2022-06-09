@@ -6,7 +6,7 @@ metadata:
 spec:
   images:
   - name: ghcr.io/olivercodes/chalupa-bot
-    newTag: rc-b7cea72e-1654801353 # {"$imagepolicy": "flux-system:chalupa-bot-staging-policy:tag"}
+    newTag: rc-9f03318a-1654802946 # {"$imagepolicy": "flux-system:chalupa-bot-staging-policy:tag"}
     newName: ghcr.io/dodbham-gitops/chalupa-bot # {"$imagepolicy": "flux-system:chalupa-bot-staging-policy:name"}
   interval: 1m
   path: "./manifests"
